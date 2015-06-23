@@ -1,351 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="PQuiz - A responsive PHP quizzing application with user management and language support.">
-    <meta name="author" content="Cai H">
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>PQuiz - A responsive PHP quizzing application!</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS and Custom CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-</head>
-<body id="page-top">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">PQuiz<?php echo empty($_SESSION['name'])?'':' - welcome '.$_SESSION['name']; ?></a>
-            </div>
+    <title>PQuiz by caih</title>
+  </head>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#tasks">Tasks</a></li>
-                    <li><a class="page-scroll" href="#features">Features</a></li>
-                    <li><a class="page-scroll" href="#demos">Demos</a></li>
-                    <li><a class="page-scroll" href="#start">Start Now!</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
+  <body>
     <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>PQuiz - The responsive quizzing application</h1>
-                <hr>
-                <p>PQuiz is one of the best responsive PHP quizzing application. It have user management system and multi-language support.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">More</a>
-            </div>
-        </div>
+      <div class="inner">
+        <h1>PQuiz</h1>
+        <h2>Responsive quizzing application built with PHP, jQuery, &amp; Bootstrap.</h2>
+        <a href="https://github.com/caih/pquiz" class="button"><small>View project on</small> GitHub</a>
+      </div>
     </header>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row call-to-action">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">You've got what we need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">I bet you got what we needed! You can help if you have one of the following, and are welcome if you can do two or more:
-                        <ul>
-                            <li>understand PHP</li>
-                            <li>understand CSS</li>
-                            <li>understand Javascript</li>
-                            <li>is good at writing</li>
-                            <li>is good at organizing</li>
-                            <li>know more than one language (one must be English or Chinese)</li>
-                            <li>understand English and/or Chinese</li>
-                        </ul>
-                    </p>
-                    <a href="#tasks" class="btn btn-default btn-xl page-scroll tada">So What Will We Do?</a>
-                    <a href="#start" class="btn btn-default btn-xl page-scroll">Get Started NOW!</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="welcome-to-pquiz" class="anchor" href="#welcome-to-pquiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to PQuiz!</h1>
 
-    <section id="tasks">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <h2 class="section-heading">What are we doing now?</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row text-center call-to-action">
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>More Languages</h3>
-                        <p class="text-muted">The app have not been fully translated -- you can help.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-gears wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Fixing Issues</h3>
-                        <p class="text-muted">There are many bugs and error in our code</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-lock wow bounceIn text-primary" data-wow-delay=".5s"></i>
-                        <h3>Security</h3>
-                        <p class="text-muted">We need to make our code more secure.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-thumbs-up wow bounceIn text-primary" data-wow-delay=".9s"></i>
-                        <h3>More Features</h3>
-                        <p class="text-muted">We can do some of our things, but not all.</p>
-                    </div>
-                </div>
-                <a href="#features" class="btn btn-primary btn-xl page-scroll tada">And what's our features?</a>
-            </div>
-        </div>
-    </section>
+<p>Hello! The project home page is right here: <a href="http://pquiz.zz.vc/">http://pquiz.zz.vc/</a><br>
+Anybody body want to collaborate?<br>
+<a href="http://pquiz.zz.vc/#contact">http://pquiz.zz.vc/#contact</a>  </p>
 
-    <section id="features" class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Features</h2>
-                    <hr class="light">
-                </div>
-            </div>
-        </div>
-        <div class="container text-center">
-            <div class="row call-to-action">
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-flag wow bounceIn"></i>
-                        <h3>Multi-Languages</h3>
-                        <p class="text-muted">PQuiz support many language, and you can add your own!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-history wow bounceIn" data-wow-delay=".2s"></i>
-                        <h3>History</h3>
-                        <p class="text-muted">It record when did somebody take a quiz and what's the score.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-lock wow bounceIn" data-wow-delay=".5s"></i>
-                        <h3>Chat</h3>
-                        <p class="text-muted">Chat can be used on PQuiz to ask qustions.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-thumbs-up wow bounceIn" data-wow-delay=".9s"></i>
-                        <h3>Setting</h3>
-                        <p class="text-muted">The is also a setting section for admins.</p>
-                    </div>
-                </div>
-                <p>Good, but what does the project look like now?</p>
-                <a href="#demos" class="btn btn-default btn-xl page-scroll tada">View Demos!</a>
-            </div>
-        </div>
-    </section>
+<h2>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h2>
 
-    <section class="no-padding" id="demos">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://demo.pquiz.zz.mu/" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">Login Page</div>
-                                <div class="project-name">Dir: /</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://demo.pquiz.zz.mu/home" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">Home</div>
-                                <div class="project-name">Dir: /home</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://demo.pquiz.zz.mu/quiz-results" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">Viewing History</div>
-                                <div class="project-name">Dir: /quiz-results</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://demo.pquiz.zz.mu/store" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">Store</div>
-                                <div class="project-name">Dir: /store</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://demo.pquiz.zz.mu/home" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">Navbar</div>
-                                <div class="project-name">Dir: /*</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://demo.pquiz.zz.mu/account" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">Profile</div>
-                                <div class="project-name">Dir: /account</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<p>Home: <a href="http://pquiz.zz.vc/">http://pquiz.zz.vc/</a><br>
+Demo: <a href="http://demo.pquiz.zz.vc/">http://demo.pquiz.zz.vc/</a><br>
+Editor: <a href="http://pquiz.zz.vc/cp/">http://pquiz.zz.vc/cp/</a>  </p>
+        </section>
 
-    <aside class="bg-primary">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>That's great! So the demo page is at ...</h2>
-                <a href="http://demo.pquiz.zz.mu/" class="btn btn-default btn-xl wow tada">"http://demo.pquiz.zz.mu/"!</a>
-                <hr class="light"/>
-                <p>Note: Here my secret of why I code fast: <a href="/cp/" class="text-muted">The Editor!</a></p>
-                <p>That's the place where I work, and we hope you enjoy it! (You actually don't have to do it here either)</p>
-            </div>
-        </div>
-    </aside>
+        <aside id="sidebar">
+          <a href="https://github.com/caih/pquiz/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/caih/pquiz/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-    <section id="start">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Start!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? Send us an email or add a message and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn"></i>
-                    <p><a href="mailto:join@pquiz.zz.mu">join@pquiz.zz.mu</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-phone fa-3x bounceIn"></i>
-                    <p><a href="#contact" class="page-scroll">Add Message</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact" class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <hr class="light">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="./" id="contact" novalidate method="post">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <input name="name" type="text" class="form-control" placeholder="Your Name or Nickname *" id="name" required data-validation-required-message="Please enter your name.">
-                                </div>
-                                <div class="form-group">
-                                    <input name="email" type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <textarea name="message" row="4" class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <button type="submit" class="btn btn-default btn-xl">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+          <p class="repo-owner"><a href="https://github.com/caih/pquiz"></a> is maintained by <a href="https://github.com/caih">caih</a>.</p>
 
-    <aside class="bg-primary copyright">
-        <div class="container text-center">
-            <div>
-                <p>My Email: join@pquiz.zz.mu | (C) 2014 ~ 2015</p>
-            </div>
-        </div>
-    </aside>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
-    <!-- jQuery and Bootstrap Core JavaScript -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62718808-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-    <script>
-        <?php if($sent){echo "alert('message sent!');";} ?>
-    </script>
-
-</body>
+  </body>
 </html>
