@@ -7,5 +7,6 @@ http://pquiz.zz.mu/#contact
 Home: http://pquiz.zz.mu/  
 Demo: http://demo.pquiz.zz.mu/  
 Editor: http://pquiz.zz.mu/cp/  
+Download: http://pquiz.zz.mu/dl/5.1.zip
 
 
